@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+     integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator Using HTML CSS & Javascript</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Captcha Generator</h2>
+        <div class="wrapper-captcha">
+            <div id="captcha"></div>
+            <button onclick="generateCaptcha()">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+        </div>
+                <div class="wrapper-check">
+                    <input type="text" id="userInput" placeholder="Enter Captcha">
+                    <button onclick="validateCaptcha()">Check </button>
+                </div>
+                <p id="result"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
